@@ -106,10 +106,6 @@ function App() {
           <header className="header">
             <div className="logo-container">
               <img src="/logo.png" alt="The Address" className="logo" />
-              <div className="company-name">
-                <div className="company-main">THE ADDRESS</div>
-                <div className="company-sub">INVESTMENTS</div>
-              </div>
             </div>
             <div className="language-toggle">
               <button
