@@ -24,7 +24,8 @@ const resources = {
       "fillAllFields": "Please fill in all required fields",
       "thankYou": "Thank You!",
       "successMessage": "Your information has been submitted successfully. We will contact you soon.",
-      "error": "An error occurred. Please try again."
+      "error": "An error occurred. Please try again.",
+      "submitAnother": "Submit Another"
     }
   },
   ar: {
@@ -49,7 +50,8 @@ const resources = {
       "fillAllFields": "يرجى ملء جميع الحقول المطلوبة",
       "thankYou": "شكراً لك!",
       "successMessage": "تم إرسال معلوماتك بنجاح. سنتواصل معك قريباً.",
-      "error": "حدث خطأ. يرجى المحاولة مرة أخرى."
+      "error": "حدث خطأ. يرجى المحاولة مرة أخرى.",
+      "submitAnother": "إرسال نموذج آخر"
     }
   }
 };

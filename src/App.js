@@ -86,6 +86,19 @@ function App() {
     }
   };
 
+  const handleReset = () => {
+    setFormData({
+      unitType: '',
+      paymentPlan: '',
+      firstName: '',
+      lastName: '',
+      phoneNumber: ''
+    });
+    setCurrentStep(1);
+    setIsSubmitted(false);
+    setError('');
+  };
+
   if (isSubmitted) {
     return (
       <div className={`App ${isRTL ? 'rtl' : ''}`}>
@@ -119,6 +132,9 @@ function App() {
                 <div className="success-icon">✓</div>
                 <h1 className="success-title">{t('thankYou')}</h1>
                 <p className="success-message">{t('successMessage')}</p>
+                <button className="btn btn-primary" onClick={handleReset} style={{ marginTop: '30px' }}>
+                  {t('submitAnother')}
+                </button>
               </div>
             </div>
           </main>
