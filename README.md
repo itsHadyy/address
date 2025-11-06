@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# The Address Investments - Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A luxurious, modern multi-step landing page for The Address Investments real estate company.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🌍 **Bilingual Support**: Full English and Arabic support with RTL layout
+- 📱 **Responsive Design**: Optimized for mobile, tablet, and desktop
+- 🎨 **Luxurious UI**: Modern, minimalist design with animated geometric shapes
+- ⚫ **Black Theme**: Sophisticated black, white, and gray color scheme
+- 🔥 **Firebase Integration**: Real-time data storage with Firestore
+- ✨ **Multi-step Form**: 
+  - Step 1: Unit Type Selection (Villa or Apartment)
+  - Step 2: Payment Plan Selection (Monthly installments in EGP)
+  - Step 3: Contact Information (First Name, Last Name, Phone Number)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+```bash
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Build for Production
 
-### `npm test`
+```bash
+npm run build
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployment
 
-### `npm run build`
+### Netlify
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is configured for Netlify deployment:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Connect your repository to Netlify
+2. Netlify will automatically detect the build settings from `netlify.toml`
+3. Deploy!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Or use the Netlify CLI:
 
-### `npm run eject`
+```bash
+npm install -g netlify-cli
+netlify deploy --prod
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Firebase Configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The Firebase configuration is already set up in `src/firebase.js`. All form submissions are stored in the `leads` collection with:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Unit type
+- Payment plan
+- First name
+- Last name
+- Phone number
+- Language used
+- Timestamp
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Customization
 
-## Learn More
+### Color Scheme
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app uses a black, white, and gray theme. To customize colors, edit the CSS variables in `src/App.css`:
+- Main background: `#000000` (pure black)
+- Form container: `#0a0a0a` (near black)
+- Borders: `#2d2d2d` (dark gray)
+- Hover states: `#4d4d4d` (medium gray)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Geometric Shapes
 
-### Code Splitting
+The animated geometric shapes can be customized in the `.App::before` and `.App::after` pseudo-elements in `src/App.css`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Logo
 
-### Analyzing the Bundle Size
+The logo is located at `/public/logo.png`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Translations
 
-### Making a Progressive Web App
+Edit `src/i18n.js` to modify translations for English and Arabic.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Tech Stack
 
-### Advanced Configuration
+- React 19
+- Firebase Firestore
+- i18next for internationalization
+- CSS3 with animations and geometric shapes
+- Create React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Browser Support
 
-### Deployment
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built with ❤️ for The Address Investments
